@@ -12,7 +12,7 @@ const App = () => (
     <Header />
     <Search />
 
-    <Categories>
+    <Categories title="Mi lista">
       <Carousel>
         <Carouselitem />
         <Carouselitem />
@@ -22,7 +22,7 @@ const App = () => (
       </Carousel>
     </Categories>
 
-    <Categories>
+    <Categories title="Tendencias">
       <Carousel>
         <Carouselitem />
         <Carouselitem />
@@ -30,7 +30,7 @@ const App = () => (
       </Carousel>
     </Categories>
 
-    <Categories>
+    <Categories title="Originales de Platzi">
       <Carousel>
         <Carouselitem />
         <Carouselitem />
