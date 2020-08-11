@@ -16,34 +16,29 @@ const App = () => {
       .then((data) => setVideos(data));
   }, []);
 
-  console.log(videos);
-
   return (
     <div className="App">
       <Header />
       <Search />
 
-      <Categories title="Mi lista">
-        <Carousel>
-          <Carouselitem />
-          <Carouselitem />
-          <Carouselitem />
-          <Carouselitem />
-          <Carouselitem />
-        </Carousel>
-      </Categories>
+      {videos.mylist.lenght > 0 && (
+        <Categories title="Mi lista">
+          <Carousel>
+            <Carouselitem />
+          </Carousel>
+        </Categories>
+      )}
 
       <Categories title="Tendencias">
         <Carousel>
-          <Carouselitem />
-          <Carouselitem />
-          <Carouselitem />
+          {videos.trends.map((item) => (
+            <Carouselitem key={item.id} {...item} />
+          ))}
         </Carousel>
       </Categories>
 
       <Categories title="Originales de Platzi">
         <Carousel>
-          <Carouselitem />
           <Carouselitem />
         </Carousel>
       </Categories>
