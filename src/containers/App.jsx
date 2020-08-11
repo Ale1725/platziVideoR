@@ -8,7 +8,11 @@ import Carouselitem from "../components/Carouselitem";
 import Footer from "../components/Footer";
 
 const App = () => {
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState({
+    mylist: [],
+    trends: [],
+    originals: [],
+  });
 
   useEffect(() => {
     fetch("http://localhost:3000/initialState")
@@ -21,7 +25,7 @@ const App = () => {
       <Header />
       <Search />
 
-      {videos.mylist.lenght > 0 && (
+      {videos.mylist.length > 0 && (
         <Categories title="Mi lista">
           <Carousel>
             <Carouselitem />
