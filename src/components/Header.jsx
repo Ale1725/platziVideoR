@@ -5,10 +5,10 @@ import userIcon from "../assets/static/user-icon.png";
 
 const Header = () => (
   <header className="header">
-    <img className="header__img" src={logo} alt="Platzi Video" />
+    <img className="header__img" src={logo} />
     <div className="header__menu">
       <div className="header__menu--profile">
-        <img src={userIcon} alt />
+        <img src={userIcon} />
         <p>Perfil</p>
       </div>
       <ul>
