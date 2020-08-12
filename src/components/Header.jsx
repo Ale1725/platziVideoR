@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/components/Header.scss";
-import logo from "../assets/static/platziSushi_logo.png";
+import logo from "../assets/static/platziSushi_logo3.png";
 import userIcon from "../assets/static/user-icon.png";
 
 const Header = () => (
