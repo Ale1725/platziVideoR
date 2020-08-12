@@ -1,5 +1,5 @@
 .carousel-item {
-  border-radius: 20px;
+  border-radius: 8px;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -14,8 +14,8 @@
 }
 
 .carousel-item:hover ~ .carousel-item {
-  -webkit-transform: translate3d(100px, 0, 0);
-  transform: translate3d(100px, 0, 0);
+  -webkit-transform: translate3d(40px, 0, 0);
+  transform: translate3d(40px, 0, 0);
 }
 
 .carousel-item__img {

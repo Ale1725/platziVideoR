@@ -27,7 +27,7 @@ const App = () => {
         </Categories>
       )}
 
-      <Categories title="Tendencias">
+      <Categories title="Featured">
         <Carousel>
           {initialState.trends.map((item) => (
             <Carouselitem key={item.id} {...item} />
@@ -35,7 +35,7 @@ const App = () => {
         </Carousel>
       </Categories>
 
-      <Categories title="Originales de Platzi">
+      <Categories title="Beginner">
         <Carousel>
           {initialState.originals.map((item) => (
             <Carouselitem key={item.id} {...item} />
