@@ -3,8 +3,16 @@
   background: $color-categories-title;
   color: white;
   font-size: 16px;
-  margin-top: -16px;
+  /* margin-top: -16px; */
   position: absolute;
-  padding-left: 30px;
-  width: 100%;
+  /* padding-left: 30px; */
+  padding-left: 20px;
+  display: inline;
+  /* width: 100% */
+}
+
+.categories_icons {
+  font-size: 2em;
+  color: white;
+  margin-left: 30px;
 }

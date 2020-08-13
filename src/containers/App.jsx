@@ -7,6 +7,7 @@ import Carousel from "../components/Carousel";
 import Carouselitem from "../components/Carouselitem";
 import Footer from "../components/Footer";
 import useInitialState from "../hooks/useinitialState";
+import "../components/FontawesomeIcon";
 
 const API = "http://localhost:3000/initialState";
 
@@ -18,7 +19,7 @@ const App = () => {
       <Search />
 
       {initialState.mylist.length > 0 && (
-        <Categories title="Mi lista">
+        <Categories title="Mi lista" icon="user">
           <Carousel>
             {initialState.mylist.map((item) => (
               <Carouselitem key={item.id} {...item} />
