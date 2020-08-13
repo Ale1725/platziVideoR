@@ -2,11 +2,11 @@ import React from "react";
 import "../assets/styles/components/Categories.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+const iconVideo = <FontAwesomeIcon icon="video" />;
+
 const Categories = ({ children, title }) => (
   <div className="categories">
-    <span className="categories_icons">
-      <FontAwesomeIcon icon="user" />
-    </span>
+    <span className="categories_icons">{iconVideo}</span>
     <h3 className="categories__title">{title}</h3>
     {children}
   </div>

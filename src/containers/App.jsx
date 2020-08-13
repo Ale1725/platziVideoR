@@ -19,7 +19,7 @@ const App = () => {
       <Search />
 
       {initialState.mylist.length > 0 && (
-        <Categories title="Mi lista" icon="user">
+        <Categories title="Mi lista">
           <Carousel>
             {initialState.mylist.map((item) => (
               <Carouselitem key={item.id} {...item} />
